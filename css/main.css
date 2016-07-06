@@ -2,7 +2,7 @@
 
 body {
     background-color:#f1f1f1;
-    font-family: 'Open sans', 'Arial', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 22px;
     font-size: 14px;
     }
@@ -94,4 +94,4 @@ nav {
 
 .img_container {padding-bottom: 30px;}
 
-@media (max-width: 800px){body {display:none;}}
+@media (max-width: 1200px){body {display:none;}}
