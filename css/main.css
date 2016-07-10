@@ -77,6 +77,12 @@ nav {
     background-color: #ffffff;
 }
 
+.margin-bot {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 .button {
     border-style:solid;
     border-width:1px 0px 0px 0px;
