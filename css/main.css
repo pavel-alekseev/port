@@ -1,11 +1,11 @@
 ::-webkit-scrollbar{display: none;}
 
 body {
-    background-color:#f1f1f1;
+    background-color:rgb(245,245,245);
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 22px;
     font-size: 14px;
-    }
+}
 
 p {
     margin:10px 10px 10px 10px;
@@ -28,18 +28,18 @@ a:hover {
     text-decoration: none;
     color:#4A90E2;
 }
+
 nav {
-    background-color: rgb(255,255,255);
+    background-color: rgb(245,245,245);
     border-style:solid;
-    border-width:0 0 1px 0;
+    border-width:0px 0px 1px 0px;
     border-color:rgb(210,210,210);
     margin-bottom: 30px;
 }
 
-
 .header_button {
     border-style:solid;
-    border-width:0 1px 0px 1px;
+    border-width:0 0px 0px 0px;
     border-color:rgb(210,210,210);
     height: 70px;
     margin:0;
@@ -47,7 +47,7 @@ nav {
 
 .header_title {
     border-style:solid;
-    border-width:0 0 0 1px;
+    border-width:0 0 0 0px;
     border-color:rgb(210,210,210); 
     padding: 0 0 0 10px;
     height: 70px;
@@ -99,7 +99,7 @@ nav {
     border-color:rgb(210,210,210);
     height: 50px;
     margin:0;
-}
+    }
 
 .header_title {
     border-style:solid;
@@ -108,5 +108,5 @@ nav {
     padding: 0 0 0 10px;
     height: 50px;
     margin:0;
-}
     }
+}
