@@ -37,15 +37,15 @@ text-decoration: none;}
     height: 300px;
     width: 100%;}
 
-.a {background: url('/img/a.jpg') no-repeat;background-size: cover;}
-.b {background: url(/img/b.jpg') no-repeat;background-size: cover;}
-.c {background: url('/img/c.jpg') no-repeat;background-size: cover;}
-.d {background: url('/img/d.jpg') no-repeat;background-size: cover;}
-.e {background: url('/img/e.jpg') no-repeat;background-size: cover;}
-.f {background: url('/img/f.jpg') no-repeat;background-size: cover;}
-.g {background: url('/img/g.jpg') no-repeat;background-size: cover;}
-.h {background: url('/img/back.svg') no-repeat;background-size: cover;}
-.l {background: url('/img/l.jpg') no-repeat;background-size: cover;}
+.a {background: url('/port/img/a.jpg') no-repeat;background-size: cover;}
+.b {background: url('/port/img/b.jpg') no-repeat;background-size: cover;}
+.c {background: url('/port/img/c.jpg') no-repeat;background-size: cover;}
+.d {background: url('/port/img/d.jpg') no-repeat;background-size: cover;}
+.e {background: url('/port/img/e.jpg') no-repeat;background-size: cover;}
+.f {background: url('/port/img/f.jpg') no-repeat;background-size: cover;}
+.g {background: url('/port/img/g.jpg') no-repeat;background-size: cover;}
+.h {background: url('/port/img/back.svg') no-repeat;background-size: cover;}
+.l {background: url('/port/img/l.jpg') no-repeat;background-size: cover;}
 
 nav a:hover {
     animation:example 0.3s forwards;
