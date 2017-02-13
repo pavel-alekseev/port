@@ -23,6 +23,7 @@
     padding:80px 40px 0 0;
     display: block;
 }
+
 .card {
     display:block;
     height: 480px;
@@ -86,6 +87,89 @@ button {
 @keyframes example {
     from {}
     to {;padding-right: 10px;}}
+
+/* DEVICES */
+.base_t {
+    background : #F5F5F5;
+    border: 1px solid #D2D2D2;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    display: flex;
+    width: 880px;
+    height: 630px;
+    flex-direction: row;
+    margin: 30px auto ;
+}
+
+.base_t img {
+    margin:  auto 0 auto 8%;
+    border: 4px solid #515151;
+}
+
+.base_m {
+    background : #F5F5F5;
+    border: 1px solid #D2D2D2;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    display: flex;
+    width: 380px;
+    height: 790px;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.base_m img {
+    margin: 20% auto 0 auto;
+    border: 4px solid #515151;
+}
+
+.base_b {
+    background : #F5F5F5;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 30px auto ;
+    overflow: hidden;
+}
+
+.base_b img {
+    margin: 0 0 0 0;
+    border-top: 1px solid #d2d2d2;
+}
+
+.circle {
+    position: relative;
+    margin: auto;
+    border:1px solid #d2d2d2;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+}
+
+.circle_b {
+    margin: auto;
+    border:1px solid #d2d2d2;
+    border-radius: 7px;
+    height: 14px;
+    width: 14px;
+    margin:auto;
+}
+
+.container_b {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width:70px;
+    height: 30px;
+    margin:0 0 0 5px;
+}
+
 
 /* Modals */
 .modal-dialog {width:100%;display:flex;}
@@ -161,14 +245,18 @@ h2 {margin:30px 0 30px 10px;}
 
 /* Mobile */
 @media (max-width: 1200px){
-.header_button {
+    .header_button {
     height: 50px;
     margin:0;}
 
-.header_title {
-    padding: 0 0 0 10px;
-    height: 50px;
-    margin:0;}
+    .header_title {
+        padding: 0 0 0 10px;
+        height: 50px;
+        margin:0;}
 }
     
-    
+@media (min-width: 1200px){
+    .modal-body{
+        width: 1170px;
+    }
+}
