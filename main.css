@@ -44,9 +44,6 @@ text-decoration: none;}
 .d {background: url('img/d.jpg') no-repeat;background-size: cover;}
 .e {background: url('img/e.jpg') no-repeat;background-size: cover;}
 .f {background: url('img/f.jpg') no-repeat;background-size: cover;}
-.g {background: url('img/g.jpg') no-repeat;background-size: cover;}
-.h {background: url('img/back.svg') no-repeat;background-size: cover;}
-.l {background: url('img/l.jpg') no-repeat;background-size: cover;}
 
 nav a:hover {
     animation:example 0.3s forwards;
@@ -88,7 +85,10 @@ button {
     from {}
     to {;padding-right: 10px;}}
 
-/* DEVICES */
+
+/* Devices */
+
+
 .base_t {
     background : #F5F5F5;
     border: 1px solid #D2D2D2;
@@ -173,6 +173,8 @@ button {
 
 
 /* Modals */
+
+
 .modal-dialog {width:100%;display:flex;}
 @media (min-width: 768px){
 .modal-dialog {width:100%;}}
@@ -239,12 +241,18 @@ button img {
 
 button:hover img{
     transform: rotate(360deg);}
+
     
 /* Project page */
+
+
 h2 {margin:30px 0 30px 10px;}
 .img_container {padding-bottom: 30px;}
 
+
 /* Mobile */
+
+
 @media (max-width: 1200px){
     .header_button {
     height: 50px;
