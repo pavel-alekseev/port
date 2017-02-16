@@ -1,13 +1,55 @@
-/*::-webkit-scrollbar{display: none;}*/
+/* COVER IMAGES FOR PROJECT CARDS */
+.a {
+    background: url('img/a.jpg') no-repeat;background-size: cover;
+}
+.b {
+    background: url('img/b.jpg') no-repeat;background-size: cover;
+}
+.c {
+    background: url('img/c.jpg') no-repeat;background-size: cover;
+}
+.d {
+    background: url('img/d.jpg') no-repeat;background-size: cover;
+}
+.e {
+    background: url('img/e.jpg') no-repeat;background-size: cover;
+}
+.f {
+    background: url('img/f.jpg') no-repeat;background-size: cover;
+}
+
+
+/* OVERRIDES */
 
 * {
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
-    font-size: 14px;}
+    font-size: 14px;
+}
 
-:focus {outline:none}
-.nomargin {margin:0px;padding:0px;}
-.margin_bot {margin-bottom:120px;}
+.col-sm-2, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+    
+ :focus {
+    outline:none
+}
+
+a:active, a:hover, a:focus, .card {
+    outline:none;
+    text-decoration: none;}
+
+
+/* INDEX */
+
+nav a:hover {
+    animation:example 0.3s forwards;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);}
+
+@keyframes example {
+    from {padding-right: 0px;}
+    to {padding-right: 10px;}}
 
 .card__text { 
     color: rgb(50,50,50);
@@ -19,52 +61,10 @@
     overflow:hidden;
     padding:5px 20px;}
 
-.about__p{
-    padding:80px 40px 0 0;
-    display: block;
-}
-
 .card {
     display:block;
     height: 480px;
     width: 100%;}
-
-a:active, a:hover, a:focus, .card {
-outline:none;
-text-decoration: none;}
-
-.project__card {
-    display:block;
-    height: 300px;
-    width: 100%;}
-
-.a {background: url('img/a.jpg') no-repeat;background-size: cover;}
-.b {background: url('img/b.jpg') no-repeat;background-size: cover;}
-.c {background: url('img/c.jpg') no-repeat;background-size: cover;}
-.d {background: url('img/d.jpg') no-repeat;background-size: cover;}
-.e {background: url('img/e.jpg') no-repeat;background-size: cover;}
-.f {background: url('img/f.jpg') no-repeat;background-size: cover;}
-
-nav a:hover {
-    animation:example 0.3s forwards;
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);}
-    
-.header {
-    height: 120px;
-    display:flex;}
-
-.flex {display: flex;}
-
-.flex_auto {margin:auto;}
-
-.flex_center { 
-    margin-top: auto;
-    margin-bottom: auto;}
-
-.flex_center_right { 
-    margin-top: auto;
-    margin-bottom:auto;
-    margin-left: auto;}
 
 .button {
     border-style:solid;
@@ -81,13 +81,53 @@ button {
     box-shadow: none;
 }
 
-@keyframes example {
-    from {}
-    to {;padding-right: 10px;}}
+
+/* POSITION */
+
+.flex {
+    display: flex;
+}
+
+.flex_auto {
+    display: block;
+    margin:auto;
+}
+
+.modal_text {
+    padding: 40px;
+    margin-bottom: 0px;
+}
+
+.margin_bot {
+    margin-bottom:120px;
+}
+
+.col-sm-2 {
+    margin-top:15px;
+}
+
+.about {
+    padding: 40px;
+}
 
 
-/* Devices */
+/* HEADER */
 
+.flex_center { 
+    margin-top: auto;
+    margin-bottom:auto;}
+
+.flex_center_right { 
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: auto;}
+    
+.header {
+    height: 120px;
+    display:flex;}
+
+
+/* DEVICE CONTAINERS */
 
 .base_t {
     background : #F5F5F5;
@@ -99,13 +139,11 @@ button {
     width: 880px;
     height: 630px;
     flex-direction: row;
-    margin: 30px auto ;
-}
+    margin: 15px auto ;}
 
 .base_t img {
     margin:  auto 0 auto 8%;
-    border: 4px solid #515151;
-}
+    border: 4px solid #515151;}
 
 .base_m {
     background : #F5F5F5;
@@ -118,30 +156,27 @@ button {
     height: auto;
     padding:80px 0 0 0;
     flex-direction: column;
-    margin: 30px auto;
-}
+    margin: 15px auto;}
 
 .base_m img {
     margin: 0 auto 0 auto;
-    border: 4px solid #515151;
-}
+    border: 4px solid #515151;}
 
 .base_b {
     background : #F5F5F5;
     border: 1px solid #D2D2D2;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
     overflow: hidden;
+    margin:15px auto;
 }
 
 .base_b img {
     margin: 0 0 0 0;
-    border-top: 1px solid #d2d2d2;
-}
+    border-top: 1px solid #d2d2d2;}
 
 .circle {
     position: relative;
@@ -150,8 +185,7 @@ button {
     border-radius: 30px;
     height: 60px;
     width: 60px;
-    align-self: center;
-}
+    align-self: center;}
 
 .circle_b {
     margin: auto;
@@ -159,8 +193,7 @@ button {
     border-radius: 7px;
     height: 14px;
     width: 14px;
-    margin:auto;
-}
+    margin:auto;}
 
 .container_b {
     display: flex;
@@ -168,16 +201,19 @@ button {
     flex-direction: row;
     width:70px;
     height: 30px;
-    margin:0 0 0 5px;
+    margin:0 0 0 5px;}
+
+
+/* MODALS */
+
+.modal-dialog {
+    width:100%;
+    display:flex;
 }
 
-
-/* Modals */
-
-
-.modal-dialog {width:100%;display:flex;}
 @media (min-width: 768px){
-.modal-dialog {width:100%;}}
+    .modal-dialog {
+        width:100%;}}
 
 .modal, .fade, .in {
     background-color: rgb(245,245,245);
@@ -185,18 +221,23 @@ button {
 
 .modal.fade:not(.in) .modal-dialog {
     -webkit-transform: translate3d(-25%, 0, 0);
-    transform: translate3d(-25%, 0, 0);
-}
+    transform: translate3d(-25%, 0, 0);}
 
-.modal .container {padding:0;}
+.modal .container {
+    padding:0;
+}
 
 .modal-content {
     border-radius: 0;
     border:none;
     box-shadow: 0px 2px 5px #afafaf;
-    margin:auto;}
+    margin:auto;
+    padding:15px 15px 15px 15px;
+}
 
-.modal-body {padding:15px 15px 0px 15px;}
+.modal-body {
+    padding:0;
+}
 
 .modal_button {
     position:fixed;
@@ -213,7 +254,7 @@ button {
 
 .fixed {
     position: fixed;
-    right:10px;
+    right:25px;
     z-index: 1;
     background: rgba(255,255,255,0.5);
     padding:10px 20px;}
@@ -240,18 +281,16 @@ button img {
     outline:none;}
 
 button:hover img{
-    transform: rotate(360deg);}
+    transform: rotate(360deg);
+}
 
-    
-/* Project page */
+.modal_nav {
+    display:block;
+    height: 300px;
+    width: 100%;}
 
 
-h2 {margin:30px 0 30px 10px;}
-.img_container {padding-bottom: 30px;}
-
-
-/* Mobile */
-
+/* @MEDIA */
 
 @media (max-width: 1200px){
     .header_button {
