@@ -107,7 +107,13 @@ button {
 }
 
 .about {
-    padding: 40px;
+    flex-direction:column;
+    align-content: space-between;
+    margin-top:50px;
+}
+
+.about img, .about p {
+    margin:0 auto 50px auto;
 }
 
 
