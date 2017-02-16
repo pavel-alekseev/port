@@ -294,17 +294,26 @@ button:hover img{
 
 @media (max-width: 1200px){
     .header_button {
-    height: 50px;
-    margin:0;}
+        height: 50px;
+        margin:0;
+    }
 
     .header_title {
         padding: 0 0 0 10px;
         height: 50px;
-        margin:0;}
+        margin:0;
+    }
 }
     
 @media (min-width: 1200px){
     .modal-body{
         width: 1170px;
+    }
+}
+
+@media (min-width: 600px){
+    .img-circle {
+        height:400px;
+        width:400px;
     }
 }
