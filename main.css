@@ -1,22 +1,20 @@
 /* COVER IMAGES FOR PROJECT CARDS */
+
 .a {
-    background: url('img/a.jpg') no-repeat;background-size: cover;
+    background: url('img/a.jpg') no-repeat;
+
 }
+
 .b {
-    background: url('img/b.jpg') no-repeat;background-size: cover;
+    background: url('img/b.jpg') no-repeat;
+    
 }
 .c {
-    background: url('img/c.jpg') no-repeat;background-size: cover;
-}
-.d {
-    background: url('img/d.jpg') no-repeat;background-size: cover;
-}
-.e {
-    background: url('img/e.jpg') no-repeat;background-size: cover;
-}
-.f {
-    background: url('img/f.jpg') no-repeat;background-size: cover;
-}
+    background: url('img/c.jpg') no-repeat;
+    
+    }
+
+
 
 
 /* OVERRIDES */
@@ -25,13 +23,14 @@
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
     font-size: 14px;
+    color:#333;
 }
 
-.col-sm-2, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12 {
+.container, .col-sm-2, .col-sm-3,.col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12 {
     padding-right: 0px;
     padding-left: 0px;
 }
-    
+
  :focus {
     outline:none
 }
@@ -40,31 +39,71 @@ a:active, a:hover, a:focus, .card {
     outline:none;
     text-decoration: none;}
 
+p {
+    margin:0 0 0 0;
+}
+
+h1 {font-size: 30px;
+line-height: 40px;
+}
+
+
+
 
 /* INDEX */
+
+.container_index {
+    margin:10vh;
+}
 
 nav a:hover {
     animation:example 0.3s forwards;
     background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);}
 
-@keyframes example {
-    from {padding-right: 0px;}
-    to {padding-right: 10px;}}
+.header_text{ 
+    position: absolute;
+    top: 26px;
+    left: 30px;
+}
 
-.card__text { 
-    color: rgb(50,50,50);
-    position:absolute;
-    bottom:0px;
-    right:10px;
-    text-align:center;
-    background:rgba(255,255,255,1.0);
-    overflow:hidden;
-    padding:5px 20px;}
+.header_text_b{
+    position: absolute;
+    bottom: 26px;
+    left: 30px;
+}
+
+.link{ 
+    text-decoration: underline;
+    color: rgb(0,120,190);
+}
+
+.card_text { 
+    margin:26px auto 26px 30px;
+    color:rgb(51,51,51);
+    }
+
+.text_container{
+    border-top: solid 0px rgb(220,220,220);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background-color:rgba(240,240,240,0.8);
+    width: 100%;
+}
 
 .card {
-    display:block;
-    height: 480px;
-    width: 100%;}
+    height: 80vh;
+    position: relative;
+    margin:0 0 0 20px;
+    
+}
+
+.header {
+    border: solid 0px rgb(220,220,220);
+    box-sizing: border-box;
+    background-color: rgb(240,240,240);
+    height:80vh;    
+    position: relative;}
 
 .button {
     border-style:solid;
@@ -80,6 +119,9 @@ button {
 .btn.active, .btn:active {
     box-shadow: none;
 }
+
+
+
 
 
 /* POSITION */
@@ -121,20 +163,6 @@ button {
     margin-left: 0px;}
 
 
-/* HEADER */
-
-.flex_center { 
-    margin-top: auto;
-    margin-bottom:auto;}
-
-.flex_center_right { 
-    margin-top: auto;
-    margin-bottom:auto;
-    margin-left: auto;}
-    
-.header {
-    height: 120px;
-    display:flex;}
 
 
 /* DEVICE CONTAINERS */
@@ -214,6 +242,8 @@ button {
     margin:0 0 0 5px;}
 
 
+
+
 /* MODALS */
 
 .modal-dialog {
@@ -226,7 +256,7 @@ button {
         width:100%;}}
 
 .modal, .fade, .in {
-    background-color: rgb(245,245,245);
+    background-color: rgba(245,245,245,0.8);
 }
 
 .modal.fade:not(.in) .modal-dialog {
@@ -300,6 +330,8 @@ button:hover img{
     width: 100%;}
 
 
+
+
 /* @MEDIA */
 
 @media (max-width: 1200px){
@@ -327,3 +359,8 @@ button:hover img{
         width:400px;
     }
 }
+
+@media (min-width: 1200px){
+.index {
+    width:auto;
+}}
