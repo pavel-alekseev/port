@@ -302,7 +302,7 @@ button img {
 
 .modal_button:active,
 .modal_button:focus,
-.modal_button:active,
+.modal_button:active:hover,
 .modal_button:hover {
     background-color:rgba(200,200,200,0.8);
     box-shadow: 1px;
