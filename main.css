@@ -1,5 +1,4 @@
 /* COVER IMAGES FOR PROJECT CARDS */
-
 .a {
     background: url('img/a.jpg') no-repeat;
 
@@ -14,7 +13,6 @@
 
 
 /* OVERRIDES */
-
 * {
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
@@ -45,7 +43,6 @@ line-height: 40px;
 
 
 /* INDEX */
-
 .container_index {
     margin:10vh;
     width:auto;
@@ -85,21 +82,24 @@ nav a:hover {
     margin:0 0 0 10px;
 }
 
-.card:hover .text_container{
-    transition: all 0.2s ease;
-    background-color:rgba(230,230,230,1);
-}
-
-.header_transition:hover{
-    transition: all 0.2s ease;
-    background-color:rgba(230,230,230,1);
-}
-
 .text_container{
+    transition: background-color 0.5s ease-out;
     position: absolute;
     bottom: 0px;
     background-color:rgba(240,240,240,0.8);
     width: 100%;
+}
+
+.card:hover .text_container{
+    background-color:rgba(230,230,230,1);
+}
+
+.header_transition:hover{
+    background-color:rgba(230,230,230,1);
+}
+
+.modal_nav:hover .text_container{
+    background-color:rgba(230,230,230,1);
 }
 
 .card_text { 
@@ -123,8 +123,8 @@ button {
 }
 
 
-/* POSITION */
 
+/* POSITION */
 .flex {
     display: flex;
 }
@@ -165,7 +165,6 @@ button {
 
 
 /* DEVICE CONTAINERS */
-
 .base_t {
     background : #F5F5F5;
     border: 1px solid #D2D2D2;
@@ -243,7 +242,6 @@ button {
 
 
 /* MODALS */
-
 .modal-dialog {
     width:100%;
     display:flex;
@@ -273,29 +271,12 @@ button {
     padding:0;
 }
 
-.modal_button {
-    position:fixed;
-    display: flex;
-    top:50px;
-    right:50px;
-    height:50px;
-    width:50px;
-    border-radius: 50%;
-    background:rgba(230,230,230,0.8);
-    z-index: 1;
-    border:none;
-    padding:0;}
-
 .fixed {
     position: fixed;
     right:25px;
     z-index: 1;
     background: rgba(255,255,255,0.5);
     padding:10px 20px;}
-
-.modal__icon {
-    margin-right:5px;
-}
 
 button img {
     margin:auto;
@@ -305,30 +286,38 @@ button img {
     transition-timing-function: initial;
     transition-delay: initial;}
 
+.modal_button {
+    transition: background-color 0.2s ease-out;
+    background-color:rgba(230,230,230,0.8);
+    position:fixed;
+    display: flex;
+    top:50px;
+    right:50px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    z-index: 1;
+    border:none;
+    padding:0;}
 
 .modal_button:active,
 .modal_button:focus,
-.modal_button:hover:active {
-    
-    transition: background 1s;
-    background:rgba(230,230,230,0.8);
+.modal_button:active,
+.modal_button:hover {
+    background-color:rgba(200,200,200,0.8);
     box-shadow: 1px;
     border:none;
     outline:none;}
-
-.modal_button:hover {
-    background:rgba(0,0,0,0.2);
-}
 
 .modal_nav {
     display:block;
     height: 300px;
     width: 100%;
-    cursor:pointer;}   
+    cursor:pointer;
+}   
     
 
 /* @MEDIA */
-
 @media (max-width: 1200px){
     .header_button {
         height: 50px;
@@ -365,7 +354,6 @@ button img {
 }}
 
 /* KEYFRAMES */
-
 @-webkit-keyframes fade {
   0%   { background:rgba(0,0,0,0.2); }
   100% { background:rgba(230,230,230,0.8); }
