@@ -333,12 +333,14 @@ button img {
 .carousel_button:active,
 .carousel_button:focus,
 .carousel_button:active:hover,
-.carousel_button:hover,
+.carousel_button:hover
+
 {
     background-color:rgba(200,200,200,0.8);
     box-shadow: 1px;
     border:none;
-    outline:none;}
+    outline:none;
+}
 
 .modal_nav {
     display:block;
