@@ -93,7 +93,7 @@ nav a:hover {
 }
 
 .text_container{
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.2s ease-out;
     position: absolute;
     bottom: 0px;
     background-color:rgba(240,240,240,0.8);
