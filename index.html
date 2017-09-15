@@ -11,35 +11,57 @@
 	<link rel="icon" type="imageng" src="./img/fav.ico">
 	
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
+    
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="./main.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- HEADER ///////////////////////////////////////////-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container nav_padding">
     
-<!-- Content ///////////////////////////////////////////-->
-    <div class="container container_index index">
-        <div class="row">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Pavel Alekseev UI/UX design</a>
+    </div>
+      
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About and contact</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  
+</div>
+</nav>
+    
+    <div class="container" id="work">
+        
+<!-- WORK ///////////////////////////////////////////-->               
+    <div class="row margin_top">
             
-            <div class="col-sm-3">
-                <div class="header">
-                    <p class="header_text">PAVEL ALEKSEEV<br>User interface design</p>
-                   
-                    <a class="text_container header_transition" data-toggle="modal" href="#about">
-                       
-                        <div class="card_text">
-                            <p class="link">ABOUT</p>
-                            <p>pavelmorr@gmail.com</p>
-                        </div>
-                        
-                    </a>
-                    
-                </div>
+            <div class="col-sm-8">
+                <a data-toggle="modal" href="#a" class="card flex a">
+                    <div class="text_container">
+                        <p class="card_text">
+                        SQUAD IN TOUCH<br>Sports management
+                        </p>
+                    </div>
+                </a>
             </div>
             
-            <div class="col-sm-3">
-                <a data-toggle="modal" href="#a" class="card flex a">
+            <div class="col-sm-4">
+                <a data-toggle="modal" href="#b" class="card flex b">
                     <div class="text_container">
                         <p class="card_text">
                         SUNPLUG<br>Energy managment system
@@ -47,18 +69,11 @@
                     </div>
                 </a>
             </div>
+        </div> 
+        
+        <div class="row">
             
-            <div class="col-sm-3">
-                <a data-toggle="modal" href="#b" class="card flex b">
-                    <div class="text_container">
-                    <p class="card_text">
-                        SQUAD IN TOUCH<br>Sports management
-                    </p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <a data-toggle="modal" href="#c" class="card flex c">
                     <div class="text_container">
                         <p class="card_text">
@@ -66,13 +81,292 @@
                     </p>
                     </div>
                 </a>
+</div>
+             
+            <div class="col-sm-4">
+                <a data-toggle="modal" href="#d" class="card flex d">
+                    <div class="text_container">
+                        <p class="card_text">
+                        WEBSITES<br>2017
+                    </p>
+                    </div>
+                </a>
+</div>
+             
+            <div class="col-sm-4">
+                <a data-toggle="modal" href="#e" class="card flex e">
+                    <div class="text_container">
+                        <p class="card_text">
+                        LOGOTYPES<br>2016-2017
+                    </p>
+                    </div>
+                </a><div id="about"></div>
             </div>
-       
+            
         </div>
-    </div>
         
-<!-- SUNPLUG ///////////////////////////////////////////-->
+<!-- ABOUT ///////////////////////////////////////////-->           
+        <div class="row margin_con ">
+            <div class="col-sm-5 margin_bot">
+                <img src="./img/about.jpg" class="img-responsive img-circle" alt="n_n">
+            </div>
+            
+            <div class="col-sm-7">
+                <b>Story</b><br>
+                <p>I am freelance designer with five years of experience in various fields. I studied graphic design for two years in Latvian design academy, then worked full time as print designer for few years and studied UI design. Print design was a good foundation that allowed me to start working in other fields.<br><br> 
+                    
+                Now I mainly design web apps and closely work with developer teams, I do print and branding projects from time to time to keep work diverse. As a freelancer, I can pick my own tools and design methods, so I experiment with process, I try to refine it, create my own libraries to produce design faster.<br><br>
+
+                <b>Skills</b><br>
+                User interface design<br>
+                Corporate identity design<br>
+                Digital illustration<br> 
+                Basic user experience design<br>  
+                Basic HTML/CSS<br>  
+                Basic 3D modeling<br><br>
+
+                <b>Tools</b><br> 
+                Adobe Illustrator<br>
+                Adobe InDesign<br>
+                Adobe Photoshop<br>
+                Sketch app<br>
+                Cinema 4D<br><br> 
+
+                <b>Contact information</b><br> 
+                Email — pavelmorr@gmail.com<br> 
+                Skype — pavel.morr</p>
+               
+            
+        </div>
+        </div>
+            
+    </div>
+    
+<!-- SERVICES ///////////////////////////////////////////-->       
+    <div id="services" class="container-fluid services_bg">  
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="services_cards">
+                        <h2>Application design</h2>
+                        <p>UI design for native IOS, Android or web app. Application map and low fidelity prototype design. Quality control and design implementation review after app is developed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="services_cards">
+                        <h2>Website design</h2>
+                        <p>Complex site or simple landing page design. Design contains Desktop mobile and tablet screen sizes. Site map and low fidelity prototype development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="services_cards">
+                        <h2>Brand design</h2>
+                        <p>Brandbook with detailed brand description contains logotype design, business card, document, envelope and any other required print materials design examples. Brand graphic design or brand patterns. General brand usage guidelines, typography guidelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 ">
+                        <div class="services_cards">
+                        <h2>Logo design</h2>
+                        <p>Logotype design, with general use guidelines in web and print. All logo variations and versions prepared for use in all necessary formats. On average logotype design takes two weeks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row margin_services flex_column">
+                    <p class="flex_center services_text">Service details can be changed, average time range depends on project type. For more information contact me via pavelmorr@gmail.com or use contact form below.</p>
+                    
+                    <img src="img/logo.svg" class="flex_center">
+                </div>
+            </div>
+        </div>
+  
+    
+    
+    
+    
+    
+<!-- SQUAD IN TOUCH ///////////////////////////////////////////-->
     <div class="modal fade" style="cursor:pointer" id="a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        
+        <button type="button" class="btn btn-default modal_button" data-dismiss="modal">
+            <img src="./img/icons/x.svg">
+        </button>
+        
+        <div class="container">
+            <div class="modal-dialog margin_bot" style="cursor:default">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        
+                        <div class="col-sm-12 flex">
+                            <div class="flex_auto">
+                                <img src="img/squad/logo.svg" style="margin:150px 0 100px 0; max-height:150px;">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12">
+                            <p class="modal_text">
+                                <b>Project task</b><br>
+                                Develop Squad in touch brand and basic design system. Design user interface for mobile app and websites provided by platform.
+                                <br><br>
+                                
+                                <b>Product description</b><br>
+                                Squad In Touch allows school managers and PE staff to control any aspect of their school's sporting activities. IOS and Android app provides easy access to the system. Platform provides wide range of services, sport event managment, unique event websites for schools and counties, ability to communicate with students and parents and others.
+                                
+                            </p>
+                        </div>
+                                                
+                        <div class="col-sm-12 flex_center margin_bot">
+                           <img class="img-responsive" src="./img/squad/6.jpg">
+                        </div>
+                        
+                        <div class="col-sm-12 line">
+                            <p class="modal_text">
+                                <b>Branding</b><br>
+                                -
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-12 flex_center margin_bot"><img class="img-responsive" src="./img/squad/3.jpg"></div>
+                        <div class="col-sm-12 flex_center margin_bot"><img class="img-responsive" src="./img/squad/4.svg"></div>
+                                
+                        <div class="col-sm-12 line">
+                            <p class="modal_text">
+                                <b>Mobile app</b><br>
+                                Ui based on material design, key ui elements for IOS app are adjustet to match IOS guidelines. On later stages application will have seperate IOS design, but for first versions it was't required.
+                            </p>
+                        </div>
+                        
+                        <!-- Carousel 2 -->
+                        <div class="col-sm-12">
+                            <div id="sit_b" class="carousel slide" data-ride="carousel" data-interval="false">
+                              
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    
+                                    <div class="col-sm-12 flex_center">
+                                        <div class="base_m">
+                                            <img class="img-responsive" src="./img/squad/a.png">
+                                            <div class="circle"></div>
+                                        </div>
+                                    
+                                        <div class="base_m">
+                                            <img class="img-responsive" src="./img/squad/b.png">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-12 flex_center">
+                                        <div class="base_m">
+                                            <img class="img-responsive" src="./img/squad/c.png">
+                                            <div class="circle"></div>
+                                        </div>
+
+                                        <div class="base_m">
+                                            <img class="img-responsive" src="./img/squad/d.png">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-12 flex_center">
+                                    <div class="base_m">
+                                        <img class="img-responsive" src="./img/squad/e.png">
+                                        <div class="circle"></div>
+                                    </div>
+
+                                    <div class="base_m">
+                                        <img class="img-responsive" src="./img/squad/f.png">
+                                        <div class="circle"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="left carousel-control flex flex_center" href="#sit_b" data-slide="prev"></a>
+
+                              <a class="right carousel-control flex_center" href="#sit_b" data-slide="next">
+                                <button type="button" class="btn btn-default carousel_button flex_center">
+                                <img class="flex_auto" src="./img/icons/arrow_right.svg">
+                                </button>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 line">
+                            <p class="modal_text">
+                                <b>Landing page</b><br>
+                                
+                                Website targeted for sport teachers, provides all nessesary information with visual examples of app and websites provided by platform.
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="base_b">
+                                <div class="container_b">
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                </div>
+                                <img class="img-responsive" src="./img/squad/landing.png">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 flex_center margin_bot"><img class="img-responsive" src="./img/squad/5.svg"></div>
+                                                
+<!-- Project links ///////////////////////////////////////////-->
+                        <div class="container">
+                            <div class="col-sm-3"  style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
+                                <a class="modal_nav b dialog-b">
+                                 <div class="text_container">
+                                  <p class="card_text">SUNPLUG<br>Energy managment system</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav c dialog-c">
+                                 <div class="text_container">
+                                  <p class="card_text">SONGLINE<br>Music streameing</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav d dialog-d">
+                                 <div class="text_container">
+                                  <p class="card_text">WEBSITES<br>2017</p>
+                                 </div>
+                                </a>
+                            </div>
+                       
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
+                                <a class="modal_nav e dialog-e">
+                                 <div class="text_container">
+                                  <p class="card_text">LOGOTYPES<br>2016-2017</p>
+                                 </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+<!-- SUNPLUG ///////////////////////////////////////////-->
+    <div class="modal fade" style="cursor:pointer" id="b" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         
         <button type="button" class="btn btn-default modal_button" data-dismiss="modal">
             <img src="./img/icons/x.svg">
@@ -82,10 +376,16 @@
             <div class="modal-dialog" style="cursor:default">
                 <div class="modal-content">
                     <div class="modal-body">
+                        
+                        <div class="col-sm-12 flex">
+                            <div class="flex_auto">
+                                <img src="img/sunplug/logo.svg" style="margin:150px 0 100px 0; height:150px;">
+                            </div>
+                        </div>
+                                
                         <div class="col-sm-12">
                             <p class="modal_text">
-                                <b>SUNPLUG</b><br><br>
-                                <b>Project task</b><br>
+                                 <b>Project task</b><br>
                                 Design user interface for energy managment system app and website.
                                 <br><br>
                                 
@@ -94,50 +394,68 @@
                                 
                             </p>
                         </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m1.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m2.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m3.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m4.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m5.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/sunplug/m6.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
                         
                         <div class="col-sm-12">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                              
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-sm-12 flex flex_center">
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m1.png">
+                                        <div class="circle"></div>
+                                    </div>
+
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m2.png">
+                                        <div class="circle"></div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-12 flex flex_center">
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m3.png">
+                                        <div class="circle"></div>
+                                    </div>
+
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m4.png">
+                                        <div class="circle"></div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-12 flex flex_center">
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m5.png">
+                                        <div class="circle"></div>
+                                    </div>
+
+                                    <div class="base base_m">
+                                        <img class="img-responsive" src="./img/sunplug/m6.png">
+                                        <div class="circle"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="left carousel-control flex flex_center" href="#myCarousel" data-slide="prev"></a>
+
+                              <a class="right carousel-control flex_center" href="#myCarousel" data-slide="next">
+                                <button type="button" class="btn btn-default carousel_button flex_center">
+                                <img class="flex_auto" src="./img/icons/arrow_right.svg">
+                                </button>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 line">
                             <p class="modal_text">
                                 <b>Sunplug for tablet</b><br>
                                 Tablet interface was created so that it could have all nesessary features on one screen. Component styling kept the same as on mobile to ensure visual consistentsy. Similar to mobile, interface was designed for vertical and horizontal screen orientation.
@@ -151,128 +469,49 @@
                                 <div class="circle"></div>
                             </div>
                         </div>
-                        
-                        <div class="col-sm-12">
-                            <p class="modal_text">
-                                <b>Website</b><br>
-                                I designed calculator process for landing page whiсh allows visitors to calculate estimate system cost by providing basic information about their house. 
-                                
-                            </p>
-                        </div>
-
-                        <div class="col-sm-12 flex">
-                            <div class="base base_b">
-                                <div class="container_b">
-                                    <div class="circle_b"></div>
-                                    <div class="circle_b"></div>
-                                    <div class="circle_b"></div>
-                                </div>
-                                <img class="img-responsive" src="./img/sunplug/b2.png">
-                            </div>
-                        </div> 
+                      
                         
 <!-- Project links ///////////////////////////////////////////-->
                         <div class="container">
-                            <div class="col-sm-6"  style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
-                                <a class="modal_nav b dialog-b">
+                            
+
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
+                                <a class="modal_nav c dialog-c">
                                  <div class="text_container">
-                                  <p class="card_text">SQUAD IN TOUCH<br>Sports management &#8594;</p>
+                                  <p class="card_text">SONGLINE<br>Music streameing </p>
                                  </div>
                                 </a>
                             </div>
-
-                            <div class="col-sm-6" style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
-                                <a class="modal_nav c dialog-c">
+                        
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav d dialog-d">
                                  <div class="text_container">
-                                  <p class="card_text">SONGLINE<br>Music streameing &#8594;</p>
+                                  <p class="card_text">WEBSITES<br>2017</p>
                                  </div>
                                 </a>
                             </div>
-                        </div>
-
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    
-<!-- SQUAD IN TOUCH ///////////////////////////////////////////-->
-    <div class="modal fade" style="cursor:pointer" id="b" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        
-        <button type="button" class="btn btn-default modal_button" data-dismiss="modal">
-            <img src="./img/icons/x.svg">
-        </button>
-        
-        <div class="container">
-            <div class="modal-dialog margin_bot" style="cursor:default">
-                <div class="modal-content">
-                    <div class="modal-body">
-                    
-                        <div class="col-sm-12">
-                            <p class="modal_text">
-                                <b>SQUAD IN TOUCH</b><br><br>
-                                <b>Project task</b><br>
-                                Develop Squad in touch brand and basic design system. Design user interface for mobile app and websites provided by platform.
-                                <br><br>
-                                
-                                <b>Product description</b><br>
-                                Squad In Touch allows school managers and PE staff to better control, 
-and implement, any aspect of their school's sporting activities. A iOS and Android app provide easy access to the system. Platform has wide range of services it provides for participants, starting from sport event managment to providing unique event websites for schools and counties.
-                                
-                            </p>
-                        </div>
-                        
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/squad/a.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/squad/b.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>    
-                        
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/squad/c.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/squad/d.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                                                
-<!-- Project links ///////////////////////////////////////////-->
-                        <div class="container">
-                             <div class="col-sm-6" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
-                                <a class="modal_nav c dialog-c">
+                       
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav e dialog-e">
                                  <div class="text_container">
-                                  <p class="card_text">SONGLINE<br>Music streameing &#8594;</p>
+                                  <p class="card_text">LOGOTYPES<br>2016-2017</p>
                                  </div>
                                 </a>
                             </div>
                             
-                            <div class="col-sm-6"  style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 2px;">
+                            <div class="col-sm-3"  style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
                                 <a class="modal_nav a dialog-a">
                                  <div class="text_container">
-                                  <p class="card_text">SUNPLUG<br>Energy managment system &#8594;</p>
+                                  <p class="card_text">SQUAD IN TOUCH<br>Sports management</p>
                                  </div>
                                 </a>
                             </div>
                         </div>
-    
-                    </div>
-                </div>
-            </div>
+                        
         </div>
+       </div>
+      </div>
+     </div>
     </div>
 
 <!-- SONGLINE ///////////////////////////////////////////-->
@@ -286,10 +525,15 @@ and implement, any aspect of their school's sporting activities. A iOS and Andro
             <div class="modal-dialog margin_bot" style="cursor:default">
                 <div class="modal-content">
                     <div class="modal-body">
-                    
+                        
+                        <div class="col-sm-12 flex">
+                            <div class="flex_auto">
+                                <img src="img/songline/logo.svg" style="margin:150px 0 100px 0; height:100px;">
+                            </div>
+                        </div> 
+                        
                         <div class="col-sm-12">
                             <p class="modal_text">
-                                <b>SONGLINE</b><br><br>
                                 <b>Project task</b><br>
                                 Design user interface for music streaming app.
                                 <br><br>
@@ -300,63 +544,64 @@ and implement, any aspect of their school's sporting activities. A iOS and Andro
                                 
                                 
                                 Artists can mark selected content as Premium and choose a monthly fee for fans to pay in order to view that content. This allows artists to share material like unreleased songs, studio vlogs or secret meet and greet points with their fans, whilst monetizing the exclusive content.
-        
                             </p>
                         </div>
-
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/songline/a.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 flex">
-                            <div class="base base_m">
-                                <img class="img-responsive" src="./img/songline/b.png">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-6 flex">
+                                                
+                        <div class="col-sm-12 flex flex_center">
                             <div class="base base_m">
                                 <img class="img-responsive" src="./img/songline/c.png">
                                 <div class="circle"></div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 flex">
+                            
                             <div class="base base_m">
                                 <img class="img-responsive" src="./img/songline/d.png">
                                 <div class="circle"></div>
                             </div>
                         </div>
                         
-                        <div class="col-sm-12">
-                            <p class="modal_text">
-                                <b>Songline for tablet</b>                             
-                            </p>
+                        <div class="col-sm-12 flex margin_bot">
+                            <div class="flex_auto">
+                                <img class="img-responsive" src="./img/songline/e.png">
+                            </div>
                         </div>
-                        
+                                                
                         <div class="col-sm-12 flex">
                             <div class="base base_t">
                                 <img class="img-responsive" src="./img/songline/t1.png">
                                 <div class="circle"></div>
                             </div>
-                        </div>                     
+                        </div>
 
 <!-- Project links ///////////////////////////////////////////-->
                         <div class="container">
-                            <div class="col-sm-6"  style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
-                                <a class="modal_nav a dialog-a">
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
+                                <a class="modal_nav d dialog-d">
                                  <div class="text_container">
-                                  <p class="card_text">SUNPLUG<br>Energy managment system &#8594;</p>
+                                  <p class="card_text">WEBSITES<br>2017</p>
+                                 </div>
+                                </a>
+                            </div>
+                       
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav e dialog-e">
+                                 <div class="text_container">
+                                  <p class="card_text">LOGOTYPES<br>2016-2017</p>
                                  </div>
                                 </a>
                             </div>
                             
-                            <div class="col-sm-6" style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav a dialog-a">
+                                 <div class="text_container">
+                                  <p class="card_text">SQUAD IN TOUCH<br>Sports managment</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3"  style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
                                 <a class="modal_nav b dialog-b">
                                  <div class="text_container">
-                                  <p class="card_text">SQUAD IN TOUCH<br>Sports managment  &#8594;</p>
+                                  <p class="card_text">SUNPLUG<br>Energy managment system</p>
                                  </div>
                                 </a>
                             </div>
@@ -368,56 +613,296 @@ and implement, any aspect of their school's sporting activities. A iOS and Andro
         </div>
     </div>
     
-<!-- ABOUT ///////////////////////////////////////////-->
-    <div class="modal fade" id="about" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- WEBSITES ///////////////////////////////////////////-->
+    <div class="modal fade" style="cursor:pointer" id="d" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        
         <button type="button" class="btn btn-default modal_button" data-dismiss="modal">
             <img src="./img/icons/x.svg">
         </button>
+        
         <div class="container">
-            <div class="modal-dialog margin_bot margin_bot">
-                <div class="modal-content ">
+            <div class="modal-dialog margin_bot" style="cursor:default">
+                <div class="modal-content">
                     <div class="modal-body">
-                    
-                        <div class="col-sm-12 flex about">
-                            <img src="./img/about.jpg" class="img-responsive flex_auto img-circle" alt="n_n">
-
-                            <p class="flex_auto">
-                            I am freelance designer with five years of experience.<br>
-                            Studied graphic design for two years in Latvian design academy.<br><br>
-
-                            <b>Skill set</b><br>
-                            User interface design<br>
-                            Corporate identity design<br>
-                            Digital illustration<br>
-                            Basic user experience design<br>
-                            Basic HTML/CSS<br>
-                            Basic 3D modeling<br><br>
-                            
-                            <b>Tools</b><br>
-                            Adobe Illustrator — full proficency<br>
-                            Adobe InDesign — full proficency<br>
-                            Adobe Photoshop — full proficency<br> 
-                            Sketch app — limited working proficiency<br>
-                            Cinema 4D — limited working proficiency<br><br>
+                        
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="flex_auto"  style="margin:50px 0 0px 0;">
+                                <img src="img/web/cover.svg" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12">
+                            <p class="modal_text">
+                                <b>Densar</b><br>
                                 
-                            <b>Languages</b><br>
-                            English — full professional proficiency<br>
-                            Russian — native or bilingual proficiency<br>
-                            Latvian — limited working proficiency<br><br>
-
-                            <b>Contact</b><br>
-                            Email — pavelmorr@gmail.com<br>
-                            Skype — pavel.morr
+                                Small vebsite for Latvian dance studio. Bacgrond is created using brand graphic saved as svg, that allows to scale background to any needed screen size without loss in quality.
                             </p>
                         </div>
+                        
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="base base_b">
+                                <div class="container_b">
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                </div>
+                                <img class="img-responsive" src="./img/web/densar_a.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="base base_b">
+                                <div class="container_b">
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                </div>
+                                <img class="img-responsive" src="./img/web/densar_b.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 line">
+                            <p class="modal_text">
+                                <b>Betelgeuse projects</b><br>
+                                
+                                Website for machine learning company based in UK.
+                            </p>
+                        </div>
+     
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="base base_b">
+                                <div class="container_b">
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                </div>
+                                <img class="img-responsive" src="./img/web/betelgeuse.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 line">
+                            <p class="modal_text">
+                                <b>Skapis</b><br>
+                                
+                                Landing page for fashion startup that helps people find new clothing ideas.
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-12 flex flex_center">
+                            <div class="base base_b">
+                                <div class="container_b">
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                    <div class="circle_b"></div>
+                                </div>
+                                <img class="img-responsive" src="./img/web/skapis.jpg">
+                            </div>
+                        </div>
 
+<!-- Project links ///////////////////////////////////////////-->
+                         <div class="container">
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
+                                <a class="modal_nav e dialog-e">
+                                 <div class="text_container">
+                                  <p class="card_text">LOGOTYPES<br>2016-2017</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav a dialog-a">
+                                 <div class="text_container">
+                                  <p class="card_text">SQUAD IN TOUCH<br>Sports managment</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3"  style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav b dialog-b">
+                                 <div class="text_container">
+                                  <p class="card_text">SUNPLUG<br>Energy managment system</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
+                                <a class="modal_nav c dialog-c">
+                                 <div class="text_container">
+                                  <p class="card_text">SONGLINE<br>Music streameing</p>
+                                 </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
+<!-- LOGO ///////////////////////////////////////////-->
+    <div class="modal fade" style="cursor:pointer" id="e" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        
+        <button type="button" class="btn btn-default modal_button" data-dismiss="modal">
+            <img src="./img/icons/x.svg">
+        </button>
+        
+        <div class="container">
+            <div class="modal-dialog margin_bot" style="cursor:default">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        
+                        <div class="col-sm-12 flex">
+                            <div class="flex_auto"  style="margin-top:35px;">
+                                <img src="img/logo/cover.png" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12">
+                            <p class="modal_text">
+                                <b>Product description</b><br>
+                                
+                                Best logotypes created in recent years.<br><br>
+                                
+                                
+                                1. Betelgeuse projects — machine learning company based in UK / 
+                                2. Liguria — clothing studio based in Sweden /
+                                3. Desnar — dance studio based in Latvia /
+                                4. Digitally responsive — developer agency based in UK /
+                                5. Sunplug — energy management system by Lightsource and EDF /
+                                6. Skapis — fashion startup /
+                                7. Negami — graphic novel /
+                                8. CopeSomija — logo for Finlands fisnihng website /
+                                9. Menex ltd — logo for window fatory and construction company /
+                                10. Focus on music — latvian music portal /
+                                11. Latvian coin /
+                                12. Karwax — car service in Sweden
+                            </p> 
+                        </div>
+                        
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/a.png"class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/b.png" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/c.png" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/d.png" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/e.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/f.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/n.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/l.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/h.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/j.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                        
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/m.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
+                       
+                        <div class="col-sm-12 flex line">
+                            <div class="flex_auto">
+                                <img src="img/logo/i.png" style="height:auto;" class="img-responsive">
+                            </div>
+                        </div> 
 
-<!-- Bootstrap core JavaScript -->
+<!-- Project links ///////////////////////////////////////////-->
+                         <div class="container">
+                             
+                             <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 2px;">
+                                <a class="modal_nav a dialog-a">
+                                 <div class="text_container">
+                                  <p class="card_text">SQUAD IN TOUCH<br>Sports managment</p>
+                                 </div>
+                                </a>
+                            </div>
+                             
+                            <div class="col-sm-3"  style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav b dialog-b">
+                                 <div class="text_container">
+                                  <p class="card_text">SUNPLUG<br>Energy managment system</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 1px 2px 1px;">
+                                <a class="modal_nav c dialog-c">
+                                 <div class="text_container">
+                                  <p class="card_text">SONGLINE<br>Music streameing</p>
+                                 </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-3" style="border:solid rgb(255,255,255); border-width: 0px 2px 2px 1px;">
+                                <a class="modal_nav d dialog-d">
+                                 <div class="text_container">
+                                  <p class="card_text">WEBSITES<br>2017</p>
+                                 </div>
+                                </a>
+                            </div>
+                             
+                            
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
+    <!-- Bootstrap core JavaScript -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/modal.js"></script>

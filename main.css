@@ -1,22 +1,30 @@
 /* COVER IMAGES FOR PROJECT CARDS */
 .a {
     background: url('img/a.jpg') no-repeat;
-
+    background-size:cover;
 }
 .b {
     background: url('img/b.jpg') no-repeat;
+    background-size:cover;
     }
 .c {
     background: url('img/c.jpg') no-repeat;
-    
+    background-size:cover;
     }
-
+.d {
+    background: url('img/d.jpg') no-repeat;
+    background-size:cover;
+    }
+.e {
+    background: url('img/e.jpg') no-repeat;
+    background-size:cover;
+    }
 
 /* OVERRIDES */
 * {
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    line-height: 24px;
-    font-size: 14px;
+    font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+    line-height: 2;
+    font-size: 16px;
     color:#333;
 }
 
@@ -31,7 +39,7 @@
 
 a:active, a:hover, a:focus, .card {
     outline:none;
-    text-decoration: none;}
+}
 
 p {
     margin:0 0 0 0;
@@ -41,34 +49,64 @@ h1 {font-size: 30px;
 line-height: 40px;
 }
 
+h2 {
+    margin: 0 0 14px 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: left;
+  color: #4990e2;
+}
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    opacity: 1;
+   
+}
+
+.carousel-control {
+    width: 155px;
+    }
+
 
 /* INDEX */
-.container_index {
-    margin:10vh;
-    width:auto;
+
+.header{
+background: rgb(255,255,255)    
 }
 
-.header {
-    border: solid 0px rgb(220,220,220);
-    box-sizing: border-box;
-    background-color: rgb(240,240,240);
-    height:80vh;    
-    position: relative;}
+.navbar-brand{
+    padding:;
+    height:auto;
+}
+
+.navbar-default{
+    background-color:rgba(255,255,255,0.95);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #4990e2;
+    text-decoration: underline;
+    background-color:rgba(255,255,255,0);
+}
 
 nav a:hover {
-    animation:example 0.3s forwards;
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(245,245,245,1) 100%);}
-
-.header_text{ 
-    position: absolute;
-    top: 26px;
-    left: 30px;
+    text-decoration: underline;
 }
 
-.header_text_b{
-    position: absolute;
-    bottom: 26px;
-    left: 30px;
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration:underline;
+}
+
+.nav>li>a, .navbar-brand {
+    padding-bottom: 25px;
+    padding-top:25px;
+    font-size:16px;
+}
+
+.nav_padding{
+    padding:0 8px 0 8px;
 }
 
 .link{ 
@@ -77,13 +115,33 @@ nav a:hover {
 }
 
 .card {
-    height: 80vh;
+    height: 440px;
     position: relative;
-    margin:0 0 0 10px;
+    margin:0px 8px 16px 8px;
+}
+
+.services_bg{
+    padding:86px 0 0px 0;
+    background-color:#4990e2;
+}
+
+.services_cards{
+    background:white;
+    margin:0px 8px 16px 8px;
+    padding:24px;
+    min-height:240px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.services_text{
+    color:white;
+    max-width:750px;
+    text-align: center;
+    padding:0 0 56px 0;
 }
 
 .text_container{
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.2s ease-out;
     position: absolute;
     bottom: 0px;
     background-color:rgba(240,240,240,0.8);
@@ -94,17 +152,14 @@ nav a:hover {
     background-color:rgba(230,230,230,1);
 }
 
-.header_transition:hover{
-    background-color:rgba(230,230,230,1);
-}
-
 .modal_nav:hover .text_container{
     background-color:rgba(230,230,230,1);
 }
 
 .card_text { 
-    margin:26px auto 26px 30px;
+    margin:14px auto 14px 24px;
     color:rgb(51,51,51);
+    line-height: 1.75;
     }
 
 .button {
@@ -123,7 +178,6 @@ button {
 }
 
 
-
 /* POSITION */
 .flex {
     display: flex;
@@ -134,34 +188,43 @@ button {
     margin:auto;
 }
 
-.modal_text {
-    padding: 40px;
-    margin-bottom: 0px;
-    max-width: 800px;
-    margin:auto;
+.flex_center {
+    display: flex;
+    justify-content:center;
+    margin: auto;
+}
+
+.flex_column{
+    display:flex;
+    flex-direction: column;
 }
 
 .margin_bot {
     margin-bottom:60px;
 }
 
+.margin_top {
+    margin-top:70px;
+}
+
+.margin_con {
+    margin:86px auto 86px auto;
+}
+
+.margin_services{
+    margin:70px 0 86px 0;
+}
+
 .col-sm-2 {
     margin-top:15px;
 }
 
-.about {
-    flex-direction:column;
-    align-content: space-between;
-    margin-top:50px;
-}
-
-.about img, .about p {
-    margin:0 auto 50px auto;
-}
-
 .row {
     margin-right: 0px;
-    margin-left: 0px;}
+    margin-left: 0px;
+}
+
+
 
 
 /* DEVICE CONTAINERS */
@@ -175,7 +238,7 @@ button {
     width: 880px;
     height: 630px;
     flex-direction: row;
-    margin: 15px auto ;}
+    margin:0 auto 60px auto;}
 
 .base_t img {
     margin:  auto 0 auto 8%;
@@ -188,11 +251,9 @@ button {
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     display: flex;
-    width: 380px;
-    height: auto;
-    padding:80px 0 0 0;
+    padding:80px 10px 0 10px;
     flex-direction: column;
-    margin: 15px auto;}
+    margin: 0 50px 60px 50px;}
 
 .base_m img {
     ;
@@ -208,7 +269,7 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin:20px 20px;
+    margin:0 20px 40px 20px;
 }
 
 .base_b img {
@@ -242,6 +303,22 @@ button {
 
 
 /* MODALS */
+
+.carousel-control.right, .carousel-control.left{
+    background-image:none;
+}
+
+.modal_text {
+    padding: 60px;
+    margin-bottom: 0px;
+    max-width: 800px;
+    margin:auto;
+}
+
+.line{
+    border-top: 1px solid rgb(230,230,230);
+}
+
 .modal-dialog {
     width:100%;
     display:flex;
@@ -293,21 +370,36 @@ button img {
     display: flex;
     top:50px;
     right:50px;
-    height:50px;
-    width:50px;
+    height:60px;
+    width:60px;
     border-radius: 50%;
     z-index: 1;
     border:none;
     padding:0;}
 
+.carousel_button {
+    transition: background-color 0.2s ease-out;
+    background-color:rgba(230,230,230,0.8);
+    display: flex;
+    border-radius: 50%;
+    border:none;
+    height:60px;
+    width:60px;
+    }
+
 .modal_button:active,
 .modal_button:focus,
-.modal_button:active,
-.modal_button:hover {
+.modal_button:active:hover,
+.modal_button:hover,
+.carousel_button:active,
+.carousel_button:focus,
+.carousel_button:active:hover,
+.carousel_button:hover{
     background-color:rgba(200,200,200,0.8);
     box-shadow: 1px;
     border:none;
-    outline:none;}
+    outline:none;
+}
 
 .modal_nav {
     display:block;
@@ -319,33 +411,28 @@ button img {
 
 /* @MEDIA */
 @media (max-width: 1200px){
-    .header_button {
-        height: 50px;
-        margin:0;
-    }
-
-    .header_title {
-        padding: 0 0 0 10px;
-        height: 50px;
-        margin:0;
-    }
     .modal-body{
         width: auto;
         margin:0px;
     }
 }
     
-@media (min-width: 1200px){
+@media (min-width: 1500px){
     .modal-body{
-        width: 1170px;
+        width: 1500px;}
+    
+    .container{
+        min-width: 1500px;}
     }
-}
 
-@media (min-width: 600px){
+@media (max-width: 600px){
     .img-circle {
         height:400px;
-        width:400px;
+        width:400px;}
     }
+
+    @media (max-width: 800px){
+        body{display:none}}
 }
 
 @media (min-width: 1200px){
