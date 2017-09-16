@@ -225,10 +225,16 @@ button {
 }
 
 
-
-
 /* DEVICE CONTAINERS */
 .base_t {
+    background : #F5F5F5;
+    border: 1px solid #D2D2D2;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    margin:0 auto 60px auto;}
+
+.e_t {
     background : #F5F5F5;
     border: 1px solid #D2D2D2;
     border-radius: 40px;
@@ -241,7 +247,7 @@ button {
     margin:0 auto 60px auto;}
 
 .base_t img {
-    margin:  auto 0 auto 8%;
+    margin:  20px 0 20px 50px;
     border: 4px solid #515151;}
 
 .base_m {
@@ -269,7 +275,8 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin:0 20px 40px 20px;
+    margin:0 0px 40px 0px;
+    max-width: 1282px;
 }
 
 .base_b img {
@@ -303,7 +310,6 @@ button {
 
 
 /* MODALS */
-
 .carousel-control.right, .carousel-control.left{
     background-image:none;
 }
@@ -414,15 +420,22 @@ button img {
     .modal-body{
         width: auto;
         margin:0px;
-    }
-}
+    }}
     
 @media (min-width: 1500px){
     .modal-body{
-        width: 1500px;}
+        width: 1480px;}
     
     .container{
-        min-width: 1500px;}
+        min-width: 1480px;}
+    }
+
+@media (max-width: 1500px){
+    .modal-body{
+        width: 1300px;}
+    
+    .container{
+        min-width: 1300px;}
     }
 
 @media (max-width: 600px){
@@ -431,14 +444,9 @@ button img {
         width:400px;}
     }
 
-    @media (max-width: 800px){
-        body{display:none}}
-}
-
-@media (min-width: 1200px){
-.index {
-    width:auto;
-}}
+@media (max-width: 800px){
+        body{display:none
+    }}
 
 /* KEYFRAMES */
 @-webkit-keyframes fade {
