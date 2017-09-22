@@ -543,7 +543,7 @@ button img {
         }
     
     .navbar-brand {
-        padding-left: 23px;
+        padding-left: 25px;
         height: auto;
         }
     
@@ -551,13 +551,35 @@ button img {
         margin: 0px -15px;
         }
         
-        .nav>li {
-            border-bottom: 1px solid rgb(230,230,230);
+    .nav>li {
+        border-bottom: 1px solid rgb(230,230,230);
         }
     
     .navbar {
         border: 0px;
         }
+    
+    .navbar-default .navbar-toggle {
+        border-color: rgb(230,230,230);
+        }
+    
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding:18px 14px;
+        margin-top: 9px;
+        margin-right: 23px;
+        margin-bottom: 9px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        }
+        
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: rgb(245,245,245);
+        }
+}
 }
 
 
