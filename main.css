@@ -409,7 +409,7 @@ button img {
 
 .logo_svg{
     margin:150px 0 100px 0; 
-    max-height:150px;
+    height:150px;
 }
     
 
@@ -472,6 +472,7 @@ button img {
     .logo_svg{
         margin:120px 8px 80px 8px; 
         max-width:240px;
+        height: null;
         }
     
     .modal_text {
@@ -509,12 +510,54 @@ button img {
         padding: 0;
         }
     
-        .navbar-toggle {
+    .navbar-toggle {
         position: relative;
         float: right;
         padding: 14px 10px;
-        margin-top: 14px;}
+        margin-top: 14px;
+        margin-right:23px;
+        }
     
+    .base_t {
+        background: #F5F5F5;
+        border: 0px solid;
+        border-radius: 0px;
+        display: null;
+        flex-direction: row;
+        margin: 8px;
+        }
+
+    .base_t img {
+        margin: 0;
+        border: 1px solid rgb(230,230,230);
+        align-self: center;
+        }
+    
+    .carousel_button {
+        margin-top:330px;
+        margin-right:8px;
+        }
+
+    .nav_padding{
+        padding:0
+        }
+    
+    .navbar-brand {
+        padding-left: 23px;
+        height: auto;
+        }
+    
+    .navbar-nav {
+        margin: 0px -15px;
+        }
+        
+        .nav>li {
+            border-bottom: 1px solid rgb(230,230,230);
+        }
+    
+    .navbar {
+        border: 0px;
+        }
 }
 
 
