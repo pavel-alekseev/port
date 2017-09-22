@@ -82,8 +82,14 @@ background: rgb(255,255,255)
 }
 
 .navbar-brand{
-    padding:;
+    padding-left:16px;
     height:auto;
+}
+
+.nav>li>a, .navbar-brand {
+    padding-bottom: 23px;
+    padding-top:27px;
+    font-size:16px;
 }
 
 .navbar-default{
@@ -102,12 +108,6 @@ nav a:hover {
 
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration:underline;
-}
-
-.nav>li>a, .navbar-brand {
-    padding-bottom: 25px;
-    padding-top:25px;
-    font-size:16px;
 }
 
 .nav_padding{
@@ -236,18 +236,6 @@ button {
     border: 1px solid #D2D2D2;
     border-radius: 40px;
     display: flex;
-    flex-direction: row;
-    margin:0 auto 60px auto;}
-
-.e_t {
-    background : #F5F5F5;
-    border: 1px solid #D2D2D2;
-    border-radius: 40px;
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    display: flex;
-    width: 880px;
-    height: 630px;
     flex-direction: row;
     margin:0 auto 60px auto;}
 
@@ -418,6 +406,11 @@ button img {
     width: 100%;
     cursor:pointer;
 }   
+
+.logo_svg{
+    margin:150px 0 100px 0; 
+    max-height:150px;
+}
     
 
 /* @MEDIA */
@@ -437,21 +430,95 @@ button img {
 
 @media (max-width: 1500px){
     .modal-body{
-        width: 1300px;}
+        max-width: 1300px;}
     
     .container{
-        min-width: 1300px;}
+        min-width:;}
     }
-
+@media (max-width: 375px){
+      .base_m {
+        background: #F5F5F5;
+        border: 1px solid #D2D2D2;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        display: flex;
+        padding: 60px 4px 0 4px;
+        flex-direction: column;
+        margin: 0 8px 16px 8px;
+        }
+}
 @media (max-width: 600px){
-    .img-circle {
-        height:400px;
-        width:400px;}
-    }
+    
+    .card {
+        height: 300px;
+        position: relative;
+        margin:0px 8px 8px 8px;
+        }
+    
+    .services_text{
+        color:white;
+        max-width:750px;
+        text-align: center;
+        padding:0 8px 56px 8px;
+        }
 
-@media (max-width: 800px){
-        body{display:none
-    }}
+    .flex_center {
+        display: block;
+        justify-content:center;
+        margin: auto;
+        }
+    
+    .logo_svg{
+        margin:120px 8px 80px 8px; 
+        max-width:240px;
+        }
+    
+    .modal_text {
+        padding: 40px 16px 40px 16px;
+        margin-bottom: 0px;
+        max-width: 800px;
+        margin:auto;
+        }
+    
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 0px;
+        }
+    
+    .modal_nav {
+        display: block;
+        height: 180px;
+        width: 100%;
+        cursor: pointer;
+        }
+    
+    .modal_button {
+        transition: background-color 0.2s ease-out;
+        background-color: rgba(230,230,230,0.8);
+        position: fixed;
+        display: flex;
+        top: 8px;
+        right: 8px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        z-index: 1;
+        border: none;
+        padding: 0;
+        }
+    
+        .hide, .base_t{display:none;}
+    
+    .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 14px 10px;
+    margin-top: 14px;}
+    
+}
+
 
 /* KEYFRAMES */
 @-webkit-keyframes fade {
